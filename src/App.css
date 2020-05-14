@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    margin: 0;
+}
+.App{
+    background-image: linear-gradient(to bottom, rgb(45, 7, 80), rgb(88, 29, 143));
+    z-index: 90;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App .increment{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    height: 280px;
+    width: 280px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.App .increment .action-button button{
+    font-size: 1.1em;
+    color: #FFF;
+    height: 50px;
+    width: 120px;
+    border-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.App .increment .action-button button:focus{
+    outline: none;
+}
+.App .increment .action-button button:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+.App .increment .action-button button:nth-child(1){ 
+    background-color: blueviolet;
+}
+.App .increment .action-button button:nth-child(2){ 
+    background-color: rgb(226, 55, 43);
+}
