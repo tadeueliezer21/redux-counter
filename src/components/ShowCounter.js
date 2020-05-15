@@ -8,4 +8,5 @@ const ShowCounter = ({ count, title }) => (
         <h2>{count}</h2>
     </Fragment>
 )
+
 export default connect(state => ({ count: state.increment.count }))(ShowCounter);

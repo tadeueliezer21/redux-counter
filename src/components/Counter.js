@@ -2,13 +2,13 @@ import React, { Fragment } from 'react';
 
 import { connect } from 'react-redux';
 
-import * as countIncrement from '../action/actions';
+import { Creators as Actions } from '../store/ducks/increment';
 
 const Couter = ({ dispatch }) => {
     return (
         <Fragment>
-            <button onClick={() => dispatch(countIncrement.toggleIncrement())}>Increment</button>
-            <button onClick={() => dispatch(countIncrement.toggleDecrement())}>Decrement</button>
+            <button onClick={() => (dispatch(Actions.addOne(1)))}>Increment</button>
+            <button onClick={() => (dispatch(Actions.removeOne(1)))}>Decrement</button>
         </Fragment>
     );
 }
